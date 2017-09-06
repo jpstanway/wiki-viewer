@@ -14,12 +14,16 @@ $('#search-btn').on('click', function(e) {
     url: wiki_url,
     dataType: "jsonp",
     success: function(response) {
+      console.log(response);
       var articles = response[1];
+      var descriptions = response[2];
 
       for (var i = 0; i < articles.length; i++) {
         article = articles[i];
+        description = descriptions[i];
         var url = "http://en.wikipedia.org/wiki/" + article;
-        $('#wiki-links').append("<li><a href='" + url + "' target='_blank'>" + article + "</a></li>");
+        $('#wiki-links').append("<li><a href='" + url + "' target='_blank'>"
+                                + article + "</a><br><p>" + description + "</p></li>");
       };
 
       clearTimeout(timeOut);

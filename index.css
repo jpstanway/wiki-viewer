@@ -1,3 +1,7 @@
 .main {
   padding: 100px;
 }
+
+.wiki-links {
+  list-style-type: none;
+}
