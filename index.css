@@ -8,6 +8,7 @@ body {
   position: relative;
   min-height: 100%;
   padding-bottom: 31px;
+  background-color: #f9f9f9;
 }
 
 footer {
@@ -19,8 +20,18 @@ footer {
   font-size: 10px;
 }
 
+h1 {
+  color: #335fb7;
+  font-family: "Crimson Text", serif;
+}
+
+.fa {
+  color: #335fb7;
+}
+
 .container-fluid {
   max-width: 900px;
+  padding-top: 20px;
 }
 
 .main {
@@ -45,9 +56,13 @@ footer {
   color: black;
 }
 
+.links h3 {
+  font-family: "Open Sans", sans-serif;
+}
+
 .links:hover {
-  border: solid blue;
-  color: blue;
+  border: solid #335fb7;
+  color: #335fb7;
   text-decoration: none;
 }
 
