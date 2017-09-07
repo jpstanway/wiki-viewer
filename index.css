@@ -1,10 +1,36 @@
+
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 31px;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 10px;
+}
+
 .container-fluid {
-  width: 60%;
-  margin: auto;
+  max-width: 900px;
 }
 
 .main {
-  padding: 100px;
+  padding: 10px;
+}
+
+.form-btns {
+  height: 48px;
+  width: 48px;
+  margin-top: 10px;
 }
 
 .link-div {
@@ -23,4 +49,9 @@
   border: solid blue;
   color: blue;
   text-decoration: none;
+}
+
+#search-box {
+  height: 35px;
+  width: 200px;
 }

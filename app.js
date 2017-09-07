@@ -14,7 +14,7 @@ $('#search-btn').on('click', function(e) {
     url: wiki_url,
     dataType: "jsonp",
     success: function(response) {
-      console.log(response);
+      
       var articles = response[1];
       var descriptions = response[2];
 
