@@ -1,7 +1,26 @@
+.container-fluid {
+  width: 60%;
+  margin: auto;
+}
+
 .main {
   padding: 100px;
 }
 
-.wiki-links {
-  list-style-type: none;
+.link-div {
+  margin-top: 5px;
+}
+
+.links {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: solid black;
+  color: black;
+}
+
+.links:hover {
+  border: solid blue;
+  color: blue;
+  text-decoration: none;
 }

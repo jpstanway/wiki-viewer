@@ -22,12 +22,17 @@ $('#search-btn').on('click', function(e) {
         article = articles[i];
         description = descriptions[i];
         var url = "http://en.wikipedia.org/wiki/" + article;
-        $('#wiki-links').append("<li><a href='" + url + "' target='_blank'>"
-                                + article + "</a><br><p>" + description + "</p></li>");
+        $('#wiki-links').append("<div class='col-sm-6 link-div'><a class='links' href='" + url + "' target='_blank'><h3>"
+                                + article + "</h3><br><p>" + description + "</p></a></div>");
       };
 
       clearTimeout(timeOut);
     }
   });
 
+});
+
+$('#rand-btn').on('click', function(e) {
+  e.preventDefault();
+  window.open("https://en.wikipedia.org/wiki/Special:Random");
 });
