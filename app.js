@@ -7,14 +7,14 @@ $('#search-btn').on('click', function(e) {
   var wiki_url = "https://en.wikipedia.org/w/api.php?action=opensearch&search="
                   + topic + "&format=json&callback=wikiCallback";
   var timeOut = setTimeout(function() {
-    $('#wiki-links').text("Failed to get results, please try again.");
+    console.log("Failed to get results");
   }, 8000);
 
   $.ajax({
     url: wiki_url,
     dataType: "jsonp",
     success: function(response) {
-      
+
       var articles = response[1];
       var descriptions = response[2];
 
@@ -36,3 +36,11 @@ $('#rand-btn').on('click', function(e) {
   e.preventDefault();
   window.open("https://en.wikipedia.org/wiki/Special:Random");
 });
+
+
+$('#title-link').on('click', function(e) {
+  e.preventDefault();
+
+  $('#wiki-links').text("");
+  $('#search-box').val("");
+})

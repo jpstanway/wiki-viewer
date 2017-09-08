@@ -1,5 +1,7 @@
 
-
+/****************
+***** MAIN ******
+****************/
 html {
   height: 100%;
 }
@@ -11,31 +13,30 @@ body {
   background-color: #f9f9f9;
 }
 
-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  font-size: 10px;
-}
-
-h1 {
-  color: #335fb7;
-  font-family: "Crimson Text", serif;
-}
-
-.fa {
-  color: #335fb7;
-}
-
 .container-fluid {
   max-width: 900px;
   padding-top: 20px;
 }
 
+.title {
+  color: #335fb7;
+  font-family: "Crimson Text", serif;
+}
+
+#title-link:hover {
+  text-decoration: none;
+}
+
+/****************
+***** SEARCH ****
+****************/
 .main {
   padding: 10px;
+}
+
+#search-box {
+  height: 35px;
+  width: 200px;
 }
 
 .form-btns {
@@ -44,6 +45,13 @@ h1 {
   margin-top: 10px;
 }
 
+.fa {
+  color: #335fb7;
+}
+
+/****************
+***** LINKS *****
+****************/
 .link-div {
   margin-top: 5px;
 }
@@ -56,17 +64,24 @@ h1 {
   color: black;
 }
 
-.links h3 {
-  font-family: "Open Sans", sans-serif;
-}
-
 .links:hover {
   border: solid #335fb7;
   color: #335fb7;
   text-decoration: none;
 }
 
-#search-box {
-  height: 35px;
-  width: 200px;
+.links h3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/****************
+***** COPYRIGHT *
+****************/
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 10px;
 }
