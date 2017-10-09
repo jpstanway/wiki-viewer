@@ -40,7 +40,7 @@ $('#search-btn').on('click', function(e) {
 
 $('#rand-btn').on('click', function(e) {
   e.preventDefault();
-  window.open("https://en.wikipedia.org/wiki/Special:Random");
+  $('.viewer').css('display', 'initial').attr('src', 'https://en.wikipedia.org/wiki/Special:Random');
 });
 
 $('#title-link').on('click', function(e) {
