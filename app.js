@@ -47,4 +47,5 @@ $('#title-link').on('click', function(e) {
   e.preventDefault();
   $('#wiki-links').text("");
   $('#search-box').val("");
+  $('.viewer').css('display', 'none');
 });
