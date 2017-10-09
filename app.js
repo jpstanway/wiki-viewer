@@ -22,7 +22,7 @@ $('#search-btn').on('click', function(e) {
         article = articles[i];
         description = descriptions[i];
         var url = "http://en.wikipedia.org/wiki/" + article;
-        $('#wiki-links').append("<div class='col-sm-6 link-div'><a class='links' href='" + url + "' target='_blank'><h3>"
+        $('#wiki-links').append("<div class='col-sm-6 link-div'><a class='links' href='" + url + "' target='viewer'><h3>"
                                 + article + "</h3><br><p>" + description + "</p></a></div>");
       };
 
