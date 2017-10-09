@@ -1,6 +1,7 @@
 $('#search-btn').on('click', function(e) {
   e.preventDefault();
 
+  $('.viewer').css('display', 'none');
   $('#wiki-links').text("");
 
   var topic = $('#search-box').val();
@@ -22,14 +23,19 @@ $('#search-btn').on('click', function(e) {
         article = articles[i];
         description = descriptions[i];
         var url = "http://en.wikipedia.org/wiki/" + article;
-        $('#wiki-links').append("<div class='col-sm-6 link-div'><a class='links' href='" + url + "' target='_blank'><h3>"
-                                + article + "</h3><br><p>" + description + "</p></a></div>");
+        $('#wiki-links').append("<div class='col-sm-6 link-div'><a class='links' href='"
+                                + url + "' target='viewer'><h3>" + article + "</h3><br><p>"
+                                + description + "</p></a>");
+
+        $('.links').on('click', function() {
+          $('.link-div').hide();
+          $('.viewer').css('display', 'initial');
+        });
       };
 
       clearTimeout(timeOut);
     }
   });
-
 });
 
 $('#rand-btn').on('click', function(e) {
@@ -37,10 +43,8 @@ $('#rand-btn').on('click', function(e) {
   window.open("https://en.wikipedia.org/wiki/Special:Random");
 });
 
-
 $('#title-link').on('click', function(e) {
   e.preventDefault();
-
   $('#wiki-links').text("");
   $('#search-box').val("");
-})
+});

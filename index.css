@@ -74,6 +74,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.viewer {
+  height: 950px;
+  display: none;
+}
+
 /****************
 ***** COPYRIGHT *
 ****************/
