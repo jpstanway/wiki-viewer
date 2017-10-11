@@ -21,6 +21,7 @@ body {
 .title {
   color: #335fb7;
   font-family: "Crimson Text", serif;
+  font-size: 2em;
 }
 
 #title-link:hover {
