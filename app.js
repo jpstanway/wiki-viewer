@@ -1,3 +1,11 @@
+// HANDLE COPYRIGHT DATE
+var footer = document.getElementById('footer');
+var date = new Date();
+var year = date.getFullYear();
+
+footer.innerHTML = '<p>&copy;' + year + ' Jordan Stanway. All rights reserved.</p>';
+
+// SET UP WIKIPEDIA API
 $('#search-btn').on('click', function(e) {
   e.preventDefault();
 
