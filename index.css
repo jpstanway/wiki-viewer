@@ -38,6 +38,8 @@ body {
 #search-box {
   height: 35px;
   width: 200px;
+  padding-left: 5px;
+  font-style: 'Open Sans', sans-serif;
 }
 
 .form-btns {
